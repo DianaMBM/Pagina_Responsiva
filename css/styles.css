@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: #f5f0e8;
+    color: #1a1a1a;
+}
+
+
+header {
+    background: #2d6a4f;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h2,
+.nav__link {
+    color: white;
+}
+
+.nav__lista {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav__link {
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    color: #a0522d;
+}
+
+
+.inicio {
+    background: #2d6a4f;
+    padding: 60px;
+    text-align: center;
+}
+
+.inicio__titulo {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.inicio__descripcion {
+    color: #f5f0e8;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #a0522d;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.destinos {
+    padding: 70px;
+}
+
+.destinos h2 {
+    text-align: center;
+    color: #2d6a4f;
+    margin-bottom: 30px;
+}
+
+.destino-card__descripcion {
+    margin-bottom: 30px;
+
+} 
+
+.destinos__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.destino-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.destino-card img {
+    width: 100%;
+}
+
+.destino-card__contenido {
+    padding: 15px;
+}
+
+
+.beneficios {
+    background: #2d6a4f;
+    padding: 40px;
+}
+
+.beneficios__titulo {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.beneficios__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.beneficio {
+    background: #f5f0e8;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+.footer {
+    background: #1a1a1a;
+    padding: 30px;
+    color: white;
+}
+
+.footer__contenido {
+    display: flex;
+    gap: 900px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .destinos__grid,
+    .beneficios__grid {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav__lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__contenido {
+        flex-direction: column;
+    }
+}

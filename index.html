@@ -1,53 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EcoTravel</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
 
+<body>
+ <!--  Se practicó en este trabajo la nomeclatura BEM de CSS -->
     <header>
         <h2> EcoTravel</h2>
         <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#destinos">Destinos</a></li>
-                <li><a href="#beneficios"> Beneficios   
-                </a></li>
+            <ul class="nav__lista">
+                <li><a href="#inicio" class="nav__link">Inicio</a></li>
+                <li><a href="#destinos" class="nav__link">Destinos</a></li>
+                <li><a href="#beneficios" class="nav__link"> Beneficios
+                    </a></li>
             </ul>
         </nav>
 
     </header>
 
-    <nav>
-
-    </nav>
-
     <main>
         <section id="inicio" class="inicio">
-            <div class = "inicio__contenido">
+            <div class="inicio__contenido">
                 <h2 class="inicio__titulo">Conoce el mundo y su hermosa naturaleza con nosotros</h2>
                 <p class="inicio__descripcion"> Viaja a distintas áreas naturales en el mundo. </p>
                 <a href="#destinos" class="btn">Reserva ahora</a>
             </div>
-           
 
-           
+
+
         </section>
 
         <section id="destinos" class="destinos">
-            <article class="">
+            <h2> Destinos por conocer</h2>
+            <div class="destinos__grid">
 
-            </article>
+                <article class="destino-card">
+                    <img src="img/Cataratas.jpg" alt="Cataratas">
+                    <div class="destino-card__contenido">
+                        <h3 class="destino-card__titulo">Cataratas del Niagara</h3>
+                        <p class="destino-card__descripcion"> Hermosas tres cascadas situadas entre Canadá y Estados
+                            Unidos</p>
+                        <a href="#contacto" class="btn">Reserva ahora</a>
+                    </div>
+
+                </article>
+
+                <article class="destino-card">
+                    <img src="img/Zermatt.jpg" alt="Lugar para esquiar">
+                    <div class="destino-card__contenido">
+                        <h3 class="destino-card__titulo">Zermatt</h3>
+                        <p class="destino-card__descripcion"> Pueblo alpino en Suiza. Mágico para poder esquiar y
+                            divertirte.</p>
+                        <a href="#contacto" class="btn">Reserva ahora</a>
+                    </div>
+                </article>
+
+
+                <article class="destino-card">
+                    <img src="/img/playa.jpg" alt="Playa para broncearse">
+                    <div class="destino-card__contenido">
+                        <h3 class="destino-card__titulo">Playa del carmen</h3>
+                        <p class="destino-card__descripcion"> Destino caribeño en México. Perfecto para tomar el sol</p>
+                        <a href="#contacto" class="btn">Reserva ahora</a>
+                    </div>
+                </article>
+            </div>
+
+
 
         </section>
-        <section id="beneficios"></section>
+
+        <section id="beneficios" class="beneficios">
+            <h2 class="beneficios__titulo">Motivos para viajar con nosotros</h2>
+            <div class="beneficios__grid">
+
+                <div class="beneficio">
+                    <h3 class="beneficio__titulo">Impacto ambiental</h3>
+                    <p class="beneficio__texto">Cada viaje contribuye a la conservación del medio ambiente.</p>
+                </div>
+
+                <div class="beneficio">
+                    <h3 class="beneficio__titulo">Guías certificados</h3>
+                    <p class="beneficio__texto">Nuestros guías conocen y respetan cada ecosistema que visitamos.</p>
+                </div>
+
+                <div class="beneficio">
+                    <h3 class="beneficio__titulo">Comunidades locales</h3>
+                    <p class="beneficio__texto">Apoyamos a las comunidades de cada destino.</p>
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
-    <footer>
 
+    <footer class="footer" id="contacto">
+        <div class="footer__contenido">
+
+            <div class="footer__bloque">
+                <h3 class="footer__titulo">EcoTravel</h3>
+                <p class="footer__texto">Turismo sostenible para un mundo mejor.</p>
+            </div>
+
+            <div class="footer__bloque">
+                <h3 class="footer__titulo">Contacto</h3>
+                <p class="footer__texto">Zona 15,Ciudad de Guatemala</p>
+                <p class="footer__texto">4578-8575</p>
+                <p class="footer__texto">info@ecotravel.com</p>
+            </div>
+
+
+        </div>
     </footer>
-    
+
+
+
 </body>
+
 </html>
